@@ -26,6 +26,9 @@ Current work includes:
 - multi-device compatibility framework
 - privacy-safe validation tooling
 
+Current milestone: [`v0.0.3-research`](https://github.com/Linkestis/airsense11-extended/releases/tag/v0.0.3-research)
+with 94 passing tests and a signed research release.
+
 > Experimental interoperability research. Not a medical device and not affiliated with ResMed.
 
 ---
