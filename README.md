@@ -1,35 +1,57 @@
 # Hi, I'm Linkestis 👋
 
-I build and document practical open-source projects around:
+I build practical software and interoperability projects around:
 
 - 🏠 Home Assistant
 - 🔌 Local-first smart home integrations
 - 📡 Bluetooth Low Energy and device interoperability
 - 📺 Android TV / ADB automation
 - 🐍 Python
-- 🧪 Protocol research and interoperability testing
+- 🧪 Protocol research and working software development
 
 I prefer local control, reproducible testing, clear documentation, and solutions that do not depend unnecessarily on cloud services.
 
 ## Featured projects
 
-### 🫁 [AirSense 11 Extended](https://github.com/Linkestis/airsense11-extended)
+### 🫁 AirSense 11 interoperability development
 
-Independent local interoperability research for ResMed AirSense 11 devices.
+I have developed a private Python codebase for local AirSense 11 interoperability.
 
-Current work includes:
+The project began as a Home Assistant integration for personal use and has grown
+into a reusable device-interoperability architecture.
 
-- BLE protocol research
-- therapy event semantics
-- offline data decoding
-- Home Assistant integration research
-- multi-device compatibility framework
-- privacy-safe validation tooling
+The code developed so far includes work for:
 
-Current milestone: [`v0.0.3-research`](https://github.com/Linkestis/airsense11-extended/releases/tag/v0.0.3-research)
-with 94 passing tests and a signed research release.
+- authenticated local BLE communication
+- session and transport handling
+- secure protocol communication
+- read-only data acquisition
+- therapy summary extraction
+- one-minute therapy data decoding
+- therapy event interpretation
+- compatibility and profile handling
+- spool validation and safety limits
+- normalized device data models
+- Home Assistant integration
+
+The architecture is being separated from Home Assistant so the same core
+technology can potentially support additional consumers in the future,
+including Android applications, desktop applications, command-line tools,
+SDK/OEM integrations, and other local interoperability platforms.
 
 > Experimental interoperability research. Not a medical device and not affiliated with ResMed.
+
+### 🔒 Source code and development status
+
+Active AirSense development is private.
+
+The current reusable core and private Home Assistant integration are not
+publicly released. Private source code is not published, distributed, or
+licensed for reuse, derivative applications, integrations, SDKs, or commercial
+products without explicit authorization from the copyright owner.
+
+Future public releases, if any, will have their scope and licensing decided
+separately.
 
 ---
 
@@ -62,8 +84,11 @@ Focus:
 
 - Local-first systems
 - Privacy
-- Open protocols
+- Device interoperability
 - Reproducible testing
+- Clean architecture
+- Technical provenance
+- Reliable automation
 - Clear technical documentation
 - Interoperability between devices and platforms
 
