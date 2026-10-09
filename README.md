@@ -15,43 +15,54 @@ I prefer local control, reproducible testing, clear documentation, and solutions
 
 ### 🫁 AirSense 11 interoperability development
 
-I have developed a private Python codebase for local AirSense 11 interoperability.
+I am independently developing a private end-to-end AirSense 11 interoperability
+platform, covering authenticated Bluetooth Low Energy communication, validated
+data acquisition and reconstruction, historical processing, and Home Assistant
+presentation.
 
-The project began as a Home Assistant integration for personal use and has grown
-into a reusable device-interoperability architecture.
+The work is substantially more than a simple Home Assistant custom component.
+At a high level, the architecture follows:
 
-The code developed so far includes work for:
+device communication → authenticated session → transport and acquisition →
+validation and reconstruction → data processing → Home Assistant presentation
 
-- authenticated local BLE communication
-- session and transport handling
-- secure protocol communication
-- read-only data acquisition
-- therapy summary extraction
-- one-minute therapy data decoding
-- therapy event interpretation
-- compatibility and profile handling
-- spool validation and safety limits
-- normalized device data models
-- Home Assistant integration
+The end-to-end implementation has been independently developed through
+protocol research, implementation and validation, rather than being based on
+an existing publicly available complete solution.
 
-The architecture is being separated from Home Assistant so the same core
-technology can potentially support additional consumers in the future,
-including Android applications, desktop applications, command-line tools,
-SDK/OEM integrations, and other local interoperability platforms.
+Current engineering work includes:
 
-> Experimental interoperability research. Not a medical device and not affiliated with ResMed.
+- authenticated BLE communication and session/transport lifecycle handling;
+- safe fragmented spool acquisition and offline-validated bounded multi-round continuation;
+- sequence, size, Base64 and integrity validation;
+- controlled TherapyOneMinute data processing;
+- historical Summary-data handling and normalized data models;
+- privacy-conscious diagnostics and fail-closed behavior;
+- offline regression and compatibility testing;
+- controlled deployment and rollback methodology.
+
+The reusable engineering layer could potentially support interoperability,
+diagnostics, research, device testing, desktop or mobile applications, and
+other local platforms in the future. These are potential directions, not
+existing products.
+
+To the best of my knowledge, after reviewing publicly available AirSense 11
+projects and technical references, I have not found another publicly documented
+implementation that combines authenticated AirSense 11 BLE session handling,
+offline-validated multi-round spool acquisition, TherapyOneMinute processing,
+historical-data handling and Home Assistant integration in one complete
+end-to-end system.
+
+The work is intended for interoperability, monitoring, diagnostics,
+engineering and research, and historical data access. It is not intended to
+replace the official ResMed application, modify therapy settings, control
+treatment, or act as an approved medical device. It is not affiliated with
+ResMed.
 
 ### 🔒 Source code and development status
 
-Active AirSense development is private.
-
-The current reusable core and private Home Assistant integration are not
-publicly released. Private source code is not published, distributed, or
-licensed for reuse, derivative applications, integrations, SDKs, or commercial
-products without explicit authorization from the copyright owner.
-
-Future public releases, if any, will have their scope and licensing decided
-separately.
+The implementation and core engineering work remain private. Licensing terms
+are currently under review.
 
 ---
 
