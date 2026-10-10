@@ -64,6 +64,16 @@ ResMed.
 The implementation and core engineering work remain private. Licensing terms
 are currently under review.
 
+**Development status — October 2026: Alpha 1**
+
+The AirSense 11 interoperability project has entered its **Alpha 1 development phase**.
+
+A separate private development workspace has been established from a SHA-256-verified snapshot of the installed Alpha integration. The original Alpha source and production installation remain unchanged.
+
+Alpha 1 is currently undergoing further development and validation. It has not been publicly released.
+
+**Source code:** Private. Copyright and third-party licensing requirements remain subject to their respective terms and review.
+
 ---
 
 ### 📺 [TCL Google TV ADB HDMI for Home Assistant](https://github.com/Linkestis/tcl-google-tv-adb-hdmi-ha)
