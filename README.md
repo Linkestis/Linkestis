@@ -15,10 +15,7 @@ I prefer local control, reproducible testing, clear documentation, and solutions
 
 ### 🫁 AirSense 11 interoperability development
 
-I am independently developing a private end-to-end AirSense 11 interoperability
-platform, covering authenticated Bluetooth Low Energy communication, validated
-data acquisition and reconstruction, historical processing, and Home Assistant
-presentation.
+I'm developing AirSense 11 interoperability software through hands-on device research, AI-assisted engineering, and reproducible testing. I direct the project's technical objectives, experiments, validation requirements and development decisions.
 
 The work is substantially more than a simple Home Assistant custom component.
 At a high level, the architecture follows:
@@ -41,17 +38,12 @@ Current engineering work includes:
 - offline regression and compatibility testing;
 - controlled deployment and rollback methodology.
 
+**October 2026 validation milestone:** An authentic historical AirSense 11 data capture was successfully decoded and independently cross-checked. Two separately executed decoder implementations produced matching fingerprints across 2,079 raw samples. This validates cross-decoder agreement for the tested capture, not clinical accuracy or universal device compatibility.
+
 The reusable engineering layer could potentially support interoperability,
 diagnostics, research, device testing, desktop or mobile applications, and
 other local platforms in the future. These are potential directions, not
 existing products.
-
-To the best of my knowledge, after reviewing publicly available AirSense 11
-projects and technical references, I have not found another publicly documented
-implementation that combines authenticated AirSense 11 BLE session handling,
-offline-validated multi-round spool acquisition, TherapyOneMinute processing,
-historical-data handling and Home Assistant integration in one complete
-end-to-end system.
 
 The work is intended for interoperability, monitoring, diagnostics,
 engineering and research, and historical data access. It is not intended to
