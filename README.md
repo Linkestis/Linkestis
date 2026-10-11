@@ -45,6 +45,8 @@ diagnostics, research, device testing, desktop or mobile applications, and
 other local platforms in the future. These are potential directions, not
 existing products.
 
+As of October 2026, based on my review of publicly documented AirSense 11 projects and technical references, I have not identified another publicly documented implementation that combines authenticated AirSense 11 BLE session handling, offline-validated multi-round spool acquisition, TherapyOneMinute processing, historical-data handling and Home Assistant integration within a single end-to-end development architecture.
+
 The work is intended for interoperability, monitoring, diagnostics,
 engineering and research, and historical data access. It is not intended to
 replace the official ResMed application, modify therapy settings, control
