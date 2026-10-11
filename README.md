@@ -15,58 +15,19 @@ I prefer local control, reproducible testing, clear documentation, and solutions
 
 ### 🫁 AirSense 11 interoperability development
 
-I'm developing AirSense 11 interoperability software through hands-on device research, AI-assisted engineering, and reproducible testing. I direct the project's technical objectives, experiments, validation requirements and development decisions.
+I am developing private, experimental software for local AirSense 11 interoperability, research and monitoring.
 
-The work is substantially more than a simple Home Assistant custom component.
-At a high level, the architecture follows:
+The project combines independent software development with reproducible offline validation. The implementation remains private and has not been publicly released.
 
-device communication → authenticated session → transport and acquisition →
-validation and reconstruction → data processing → Home Assistant presentation
+**October 2026 validation milestone:** Two independently executed decoder implementations produced matching results across 2,079 raw samples from one authentic historical data capture. This demonstrates cross-decoder agreement for that specific capture, not clinical accuracy or universal device compatibility.
 
-The end-to-end implementation has been independently developed through
-protocol research, implementation and validation, rather than being based on
-an existing publicly available complete solution.
-
-Current engineering work includes:
-
-- authenticated BLE communication and session/transport lifecycle handling;
-- safe fragmented spool acquisition and offline-validated bounded multi-round continuation;
-- sequence, size, Base64 and integrity validation;
-- controlled TherapyOneMinute data processing;
-- historical Summary-data handling and normalized data models;
-- privacy-conscious diagnostics and fail-closed behavior;
-- offline regression and compatibility testing;
-- controlled deployment and rollback methodology.
-
-**October 2026 validation milestone:** An authentic historical AirSense 11 data capture was successfully decoded and independently cross-checked. Two separately executed decoder implementations produced matching fingerprints across 2,079 raw samples. This validates cross-decoder agreement for the tested capture, not clinical accuracy or universal device compatibility.
-
-The reusable engineering layer could potentially support interoperability,
-diagnostics, research, device testing, desktop or mobile applications, and
-other local platforms in the future. These are potential directions, not
-existing products.
-
-As of October 2026, based on my review of publicly documented AirSense 11 projects and technical references, I have not identified another publicly documented implementation that combines authenticated AirSense 11 BLE session handling, offline-validated multi-round spool acquisition, TherapyOneMinute processing, historical-data handling and Home Assistant integration within a single end-to-end development architecture.
-
-The work is intended for interoperability, monitoring, diagnostics,
-engineering and research, and historical data access. It is not intended to
-replace the official ResMed application, modify therapy settings, control
-treatment, or act as an approved medical device. It is not affiliated with
-ResMed.
+The project is intended for interoperability, diagnostics, monitoring and research. It does not modify therapy settings, control treatment, replace the official ResMed application, or constitute an approved medical device. It is not affiliated with or endorsed by ResMed.
 
 ### 🔒 Source code and development status
 
-The implementation and core engineering work remain private. Licensing terms
-are currently under review.
+**Current status:** Alpha 1 — October 2026.
 
-**Development status — October 2026: Alpha 1**
-
-The AirSense 11 interoperability project has entered its **Alpha 1 development phase**.
-
-A separate private development workspace has been established from a SHA-256-verified snapshot of the installed Alpha integration. The original Alpha source and production installation remain unchanged.
-
-Alpha 1 is currently undergoing further development and validation. It has not been publicly released.
-
-**Source code:** Private. Copyright and third-party licensing requirements remain subject to their respective terms and review.
+**Source code:** Private. No public release. Copyright and third-party licensing matters remain under review.
 
 ---
 
