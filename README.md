@@ -20,7 +20,7 @@ The project is for personal information, record-keeping and research. It does no
 
 ### 🔒Source code and status
 Status: beta — November 2026.
-Source code: private, proprietary. © 2026 Marian Acharov, trading as Linkestis. 
+Source code: private, proprietary. © 2026 Linkestis. 
 All rights reserved. No public release.
 
 ---
