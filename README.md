@@ -14,20 +14,13 @@ I prefer local control, reproducible testing, clear documentation, and solutions
 ## Featured projects
 
 ### 🫁 AirSense 11 interoperability development
+I am developing private software for local AirSense 11 interoperability, research and monitoring — a Home Assistant integration and the VerinoctisTrace Lab™ app.
+Every value is validated against the device’s own SD-card records before it is labelled as proven; validation is reproducible and documented.
+The project is for personal information, record-keeping and research. It does not modify therapy settings, control treatment, replace the official ResMed application, or constitute a medical device. Not affiliated with or endorsed by ResMed.
 
-I am developing private, experimental software for local AirSense 11 interoperability, research and monitoring.
-
-The project combines independent software development with reproducible offline validation. The implementation remains private and has not been publicly released.
-
-**October 2026 validation milestone:** Two independently executed decoder implementations produced matching results across 2,079 raw samples from one authentic historical data capture. This demonstrates cross-decoder agreement for that specific capture, not clinical accuracy or universal device compatibility.
-
-The project is intended for interoperability, diagnostics, monitoring and research. It does not modify therapy settings, control treatment, replace the official ResMed application, or constitute an approved medical device. It is not affiliated with or endorsed by ResMed.
-
-### 🔒 Source code and development status
-
-**Current status:** Alpha 1 — October 2026.
-
-**Source code:** Private. No public release. Copyright and third-party licensing matters remain under review.
+### 🔒Source code and status
+Status: beta — November 2026.
+Source code: private, proprietary. © 2026 Marian Acharov, trading as Linkestis. All rights reserved. No public release.
 
 ---
 
